@@ -1,0 +1,76 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10px;
+    width: 100%;
+    background: rgb(172, 172, 172);
+    color:black;
+    font-family: fantasy;
+}
+   
+.navLinks{
+   width: 25%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   list-style:none;
+   font-family: fantasy;
+}
+   
+p{   
+    display: flex;
+   justify-content: center;
+   font-family: fantasy;
+}
+   
+.links{
+   text-decoration: none;
+   color: black;
+   font-family: fantasy;
+}
+.links :hover{
+    color: white;
+}
+   
+h3{
+   color: black;
+   font-family: fantasy;
+}
+img{
+   height: 300px;
+   width: 300px;
+   border-radius: 5px;
+}
+.images{
+   display:grid;
+   align-items:center;
+   justify-content:center;
+}
+.saved{
+   font-family: fantasy;
+   background-color: white;
+   color: black;
+   border-radius: 10%;
+}
+.notSaved{
+   font-family: fantasy;
+   background-color: black;
+   color: white;
+   border-radius: 10%;
+}
+.container{
+   padding: 2px 16px;
+   align-items:center;
+}
+.image{
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   width: 300px;
+   border-radius: 5px;
+   padding: 2px;
+}
+.image:hover{
+   box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+   
