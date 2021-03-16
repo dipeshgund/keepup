@@ -11,7 +11,12 @@ const SavedImagesReducer = (state = defaultState, action) => {
                 errorMsg : "",
                 data: [...state.data, action.payload]
             };
-
+        case "UNSAVE_IMAGE":
+            return{
+                ...state,
+                errorMsg: "",
+                data: [...state.data.filter(url => url!== action.payload)]
+            }
         default:
             return state
     }
