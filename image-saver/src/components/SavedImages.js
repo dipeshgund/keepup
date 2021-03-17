@@ -18,7 +18,6 @@ const SavedImages = () => {
                     <Link to={`image/${image.id}`} value={image} onClick={handleClick}>
                     <Image  url = {image}/>
                     </Link>
-                    {/* <img src ={image} alt= "Unable to load"></img> */}
                 </div>
                 ))}
             </div>
