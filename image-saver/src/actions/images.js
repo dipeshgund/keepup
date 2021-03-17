@@ -44,13 +44,15 @@ export const unsaveImage = (url) =>dispatch=>{
     }
 }
 
-export const increasePage = dispatch=>{
+export const getUrl = (url)=> dispatch=>{
     try{
         dispatch({
-            type: "INCREMENT_PAGE"
+            type: "SAVE_URL",
+            payload: url
         })
     }
     catch(e){
         console.log(e);
     }
+
 }

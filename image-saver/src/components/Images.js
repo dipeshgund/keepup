@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
-import {getSavedImages, unsaveImage} from '../actions/images';
+import {getSavedImages, unsaveImage, getUrl} from '../actions/images';
 import Image from './Image';
 const Images = ({id,URL}) => {
     const [save, setSave] = useState(false);
@@ -13,9 +13,12 @@ const Images = ({id,URL}) => {
         if(!save) dispatch(getSavedImages(URL));
         if(save) dispatch(unsaveImage(URL));
     }
+    const handleClick =()=>{
+        dispatch(getUrl(URL));
+    }
     return (
             <div className="image">
-                <Link to={`image/${id}`}>
+                <Link to={`image/${id}`} onClick={handleClick}>
                 <Image  url = {URL}/>
                 </Link>
                 <button className={btn_class} onClick={handleSave} > {save? "Unsave Image":"Save Image"} </button> 

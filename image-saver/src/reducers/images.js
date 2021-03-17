@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux';
 import ImageReducer from './imageReducer';
 import SavedImagesReducer from './savedImageReducer';
-import PageReducer from './pageReducer';
+import URLReducer from './url';
 const Images = combineReducers({
     ImageList: ImageReducer,
     SavedImages: SavedImagesReducer,
-    IncreasePage: PageReducer
+    URL: URLReducer
 });
 export default Images;

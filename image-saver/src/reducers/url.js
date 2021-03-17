@@ -1,16 +1,16 @@
 const defaultPage = {
-    page:0
+    url: ""
 };
-const PageReducer = (state= defaultPage, action)=>{
+const URLReducer = (state= defaultPage, action)=>{
     switch (action.type) {
-        case "INCREMENT_PAGE":
+        case "SAVE_URL":
             return{
                 ...state,
-                page: state.page+1
+                url: action.payload
             }
         default:
             return state;
     }
 }
 
-export default PageReducer;
+export default URLReducer;
